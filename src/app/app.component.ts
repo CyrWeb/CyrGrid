@@ -9,6 +9,11 @@ import { magicCardFactory } from './magicCardFactory';
 })
 export class AppComponent {
   title = 'CyrGrid';
-  columnDefs: Array<ColDef> = [];
+  columnDefs: Array<ColDef> = [
+    { field: 'name' },
+    { field: 'illustration' },
+    { field: 'typeCarte' },
+    { field: 'text' },
+  ];
   rowData = magicCardFactory();
 }
